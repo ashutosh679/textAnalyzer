@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="textAnalyzer.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>textAnalyzer</title>
+</head>
+
+<body>
+  <h1 style=" padding-top:50px;">Enter the Text to be Analyze</h1>
+
+  <div class="form-floating">
+    <textarea class="form-control" id="input" placeholder="Leave a comment here" id="floatingTextarea2"
+      style="height: 100px"></textarea>
+    <input class="btn btn-primary" type="submit" value="Submit" style="margin-top: 8px;" onclick=" return myfunction()">
+    <input class="btn btn-primary" type="submit" value="UpperCase/LowerCase" style="margin-top: 8px; margin-left: 5px;"
+      onclick=" return myfunction1()">
+    <input class="btn btn-primary" type="submit" value="Clear All" style="margin-top: 8px; margin-left: 5px;"
+      onclick="return myfunction2()">
+    
+    <h5 style="margin-top: 15px;">Entered text have</h5>
+    <p id="nospace" style="margin-top: 8px;"></p>
+    <p id="space" style="margin-top: 8px;"></p>
+    <p id="words" style="margin-top: 8px;"></p>
+    <p id="vowels" style="margin-top: 8px;"></p>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="textAnalyzer.js"></script>
+
+</body>
+
+</html>
